@@ -2,3 +2,4 @@ filings/
 __pycache__/
 *.zip
 .venv/
+.sec_user_agent
