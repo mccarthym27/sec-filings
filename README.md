@@ -2,7 +2,7 @@
 
 Type a stock ticker (NYSE or Nasdaq) and get the last 5 years of that company's SEC filings, pulled straight from **SEC EDGAR**, in one folder and one zip file.
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com//sec-filings&show=terminal)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/mccarthym27/sec-filings&show=terminal)
 
 ## What you get
 
@@ -32,6 +32,15 @@ Type a stock ticker (NYSE or Nasdaq) and get the last 5 years of that company's 
 pip install -r requirements.txt
 export SEC_USER_AGENT="Your Name your@email.com"
 python3 get_filings.py AAPL
+```
+
+On Windows (PowerShell):
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+$env:SEC_USER_AGENT = "Your Name your@email.com"
+.venv\Scripts\python get_filings.py AAPL
 ```
 
 ## Earnings call transcripts (optional)
