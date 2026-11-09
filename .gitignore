@@ -1,3 +1,4 @@
 filings/
 __pycache__/
 *.zip
+.venv/

@@ -18,6 +18,13 @@ To include them, get a Financial Modeling Prep key (paid plan) and run:
 """
 import json, os, re, sys, time, shutil, subprocess
 from datetime import date
+
+try:  # use the OS certificate store (fixes SSL errors on Windows / behind antivirus)
+    import truststore
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
+
 import requests
 
 # SEC requires a User-Agent with your name + email. Put yours here.
